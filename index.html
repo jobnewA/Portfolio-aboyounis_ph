@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahmed Aboyounis — Photography</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="ring"></div>
+
+<div id="lb">
+  <button id="lbclose"><i class="fas fa-times"></i></button>
+  <img id="lbimg" src="" alt=""/>
+</div>
+
+<nav id="nav">
+  <a href="#hero" class="logo-zone">
+    <div class="logo-img-wrap">
+      <img src="https://i.postimg.cc/X7vCrjkj/Chat-GPT-Image-30-mayw-2025-03-26-40-m.png" alt="Logo"/>
+    </div>
+    <span class="logo-text">Ahmed <em>aboyounis</em></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#gallery">Work</a></li>
+    <li><a href="#gear">Gear</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <div class="h-bg"></div>
+  <div class="h-grid"></div>
+  <div class="h-content">
+    <p class="h-eye">Photography Portfolio</p>
+    <h1 class="h-name">Ahmed<br/><em>aboyounis</em></h1>
+    <p class="h-sub">Capturing moments that live forever through the lens</p>
+    <div class="h-cta">
+      <a href="#gallery" class="btn-g">View Work</a>
+      <a href="#contact" class="btn-o">Book a Session</a>
+    </div>
+  </div>
+  <div class="h-scroll"><span>Scroll</span><div class="sline"></div></div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5 rv">
+        <div class="a-photo">
+          <img src="IMG_٢٠٢٥٠٥٣٠_٠٨٤٠١٩.jpg.jpeg" alt="Ahmed Aboyounis"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="ph" style="display:none"><i class="fas fa-user-circle"></i><span>Your Photo Here</span></div>
+        </div>
+      </div>
+      <div class="col-lg-7 a-txt rv">
+        <div class="slabel">About Me</div>
+        <h2 class="stitle" style="margin-bottom:1.8rem;">The Eye<br/>Behind the <em>Lens</em></h2>
+        <p class="a-bio">
+          I'm a passionate photographer based in El-Mansurah, dedicated to telling compelling visual stories.
+          With experience across every genre, I bring a cinematic eye and deep attention to light,
+          mood, and emotion to every single frame I capture.
+        </p>
+        <div class="a-stats">
+          <div><div class="sn">3</div><div class="sl">Years Exp.</div></div>
+          <div><div class="sn">300</div><div class="sl">Sessions</div></div>
+          <div><div class="sn">50</div><div class="sl">Clients</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="container">
+    <div class="rv">
+      <div class="slabel">Portfolio</div>
+      <h2 class="stitle" style="margin-bottom:2.5rem;">Selected <em>Work</em></h2>
+    </div>
+    <div class="gfilters rv">
+      <button class="fb act" data-f="all">All</button>
+      <button class="fb" data-f="portrait">Session</button>
+      <button class="fb" data-f="nature">party</button>
+      <button class="fb" data-f="events">Hall</button>
+    </div>
+
+    <div class="masonry rv" id="grid">
+
+      <!--
+      ══════════════════════════════════════════
+      إزاي تضيف صورك الحقيقية:
+
+      في album-cover: بدّل <div class="iph"> بـ:
+        <img src="صورتك-الرئيسية.jpg" alt=""/>
+
+      في كل sub-img: بدّل <div class="iph"> بـ:
+        <img src="صورة-إضافية.jpg" alt=""/>
+
+      غير data-c لنوع الصورة:
+        portrait-Session | nature-Party | events-Hall | product
+      ══════════════════════════════════════════
+      -->
+
+      <div class="album" data-c="portrait">
+        <div class="album-cover">
+          <img src="IMG_8875.jpg" alt=""/>
+          <div class="gover">
+            <h4>Wedding Ceremony</h4>
+            <span class="cat">Session</span>
+            <span class="acnt"><i class="fas fa-images"></i> 2 photos — tap to expand</span>
+          </div>
+          <div class="badge-count"><i class="fas fa-plus bi"></i> 2</div>
+        </div>
+        <div class="album-sub">
+          <div class="sub-img"><img src="Beige Aesthetic Moodboard Photo Collage Instagram Story.png" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="Minimalist Clean Grid Photo Collage Instagram Post.png" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+        </div>
+        <button class="album-close"><i class="fas fa-chevron-up"></i>&nbsp;&nbsp;Close Album</button>
+      </div>
+
+      <div class="album" data-c="nature">
+        <div class="album-cover">
+          <img src="IMG_5024.JPG" alt=""/>
+          <div class="gover">
+            <h4>Engagement party photography</h4>
+            <span class="cat">party</span>
+            <span class="acnt"><i class="fas fa-images"></i> 8 photos — tap to expand</span>
+          </div>
+          <div class="badge-count"><i class="fas fa-plus bi"></i> 8</div>
+        </div>
+        <div class="album-sub">
+          <div class="sub-img"><img src="IMG_4945.JPG" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_4947.JPG" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_5026.JPG" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+                    <div class="sub-img"><img src="IMG_5041.JPG" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_5042.JPG" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_5056.JPG" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+                    <div class="sub-img"><img src="IMG_5071.JPG" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_5080.JPG" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+        </div>
+        <button class="album-close"><i class="fas fa-chevron-up"></i>&nbsp;&nbsp;Close Album</button>
+      </div>
+
+      <div class="album" data-c="portrait">
+        <div class="album-cover">
+<img src="IMG_1885.jpg" alt=""/>
+          <div class="gover">
+            <h4>Engagement Session</h4>
+            <span class="cat">Session</span>
+            <span class="acnt"><i class="fas fa-images"></i> 6 photos — tap to expand</span>
+          </div>
+          <div class="badge-count"><i class="fas fa-plus bi"></i> 6</div>
+        </div>
+        <div class="album-sub">
+          <div class="sub-img"><img src="IMG_1894.jpg" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_1902.jpg" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_1913.jpg" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="Untitled-1.png" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+                    <div class="sub-img"><img src="IMG_1975.jpg" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_1955.jpg" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+        </div>
+        <button class="album-close"><i class="fas fa-chevron-up"></i>&nbsp;&nbsp;Close Album</button>
+      </div>
+
+      <div class="album" data-c="events">
+        <div class="album-cover">
+<img src="IMG_9277.jpg" alt=""/>
+          <div class="gover">
+            <h4>Hall photography</h4>
+            <span class="cat">Hall</span>
+            <span class="acnt"><i class="fas fa-images"></i> 4 photos — tap to expand</span>
+          </div>
+          <div class="badge-count"><i class="fas fa-plus bi"></i> 4</div>
+        </div>
+        <div class="album-sub">
+          <div class="sub-img"><img src="Untitled-4.png" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="Untitled-3.png" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="Untitled-2.png" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="Untitled-5.png" alt=""/><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+        </div>
+        <button class="album-close"><i class="fas fa-chevron-up"></i>&nbsp;&nbsp;Close Album</button>
+      </div>
+
+      <div class="album" data-c="events">
+        <div class="album-cover">
+<img src="IMG_5249.jpg" alt=""/>
+          <div class="gover">
+            <h4>Hall photography</h4>
+            <span class="cat">Hall</span>
+            <span class="acnt"><i class="fas fa-images"></i> 5 photos — tap to expand</span>
+          </div>
+          <div class="badge-count"><i class="fas fa-plus bi"></i> 5</div>
+        </div>
+        <div class="album-sub">
+          <div class="sub-img"><img src="IMG_5294.jpg" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_5559.jpg" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_5556.jpg" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+                    <div class="sub-img"><img src="IMG_5482.jpg" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="Untitled-11.png" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+        </div>
+        <button class="album-close"><i class="fas fa-chevron-up"></i>&nbsp;&nbsp;Close Album</button>
+      </div>
+
+      <div class="album" data-c="nature">
+        <div class="album-cover">
+<img src="IMG_0130.JPG" alt="" srcset="">          
+          <div class="gover">
+            <h4>Engagement Party</h4>
+            <span class="cat">Party</span>
+            <span class="acnt"><i class="fas fa-images"></i> 7 photos — tap to expand</span>
+          </div>
+          <div class="badge-count"><i class="fas fa-plus bi"></i> 7</div>
+        </div>
+        <div class="album-sub">
+          <div class="sub-img"><img src="IMG_0204.JPG" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_0198.JPG" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_0591.JPG" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_0190.JPG" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+                    <div class="sub-img"><img src="IMG_0147.JPG" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_0135.JPG" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="Untitled-10.png" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+        </div>
+        <button class="album-close"><i class="fas fa-chevron-up"></i>&nbsp;&nbsp;Close Album</button>
+      </div>
+
+      <div class="album" data-c="events">
+        <div class="album-cover">
+          <img src="IMG_1663.JPG" alt="">
+          <div class="gover">
+            <h4>Hall photography</h4>
+            <span class="cat">Hall</span>
+            <span class="acnt"><i class="fas fa-images"></i> 8 photos — tap to expand</span>
+          </div>
+          <div class="badge-count"><i class="fas fa-plus bi"></i> 8</div>
+        </div>
+        <div class="album-sub">
+          <div class="sub-img"><img src="IMG_1613.JPG" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_1572.JPG" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_1664.JPG" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_2344.JPG" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="Untitled-6.png" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+                    <div class="sub-img"><img src="Untitled-8.png" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="Untitled-7.png" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+                    <div class="sub-img"><img src="Untitled-9.png" alt="" srcset=""><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+
+
+        </div>
+        <button class="album-close"><i class="fas fa-chevron-up"></i>&nbsp;&nbsp;Close Album</button>
+      </div>
+
+      <div class="album" data-c="nature">
+        <div class="album-cover">
+          <img src="IMG_5305.JPG" alt="" srcset="">
+          <div class="gover">
+            <h4>Marriage party</h4>
+            <span class="cat">Party</span>
+            <span class="acnt"><i class="fas fa-images"></i> 8 photos — tap to expand</span>
+          </div>
+          <div class="badge-count"><i class="fas fa-plus bi"></i> 8</div>
+        </div>
+        <div class="album-sub">
+          <div class="sub-img"><img src="IMG_4952.JPG" alt="" ><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_4943.JPG" alt="" ><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_4964.JPG" alt="" ><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+                    <div class="sub-img"><img src="IMG_4965.JPG" alt="" ><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_5342.JPG" alt="" ><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_5435.JPG" alt="" ><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+                    <div class="sub-img"><img src="IMG_5442.JPG" alt="" ><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+          <div class="sub-img"><img src="IMG_5010.JPG" alt="" ><div class="sover"><i class="fas fa-expand-alt"></i></div></div>
+        </div>
+        <button class="album-close"><i class="fas fa-chevron-up"></i>&nbsp;&nbsp;Close Album</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="gear">
+  <div class="container">
+    <div class="rv">
+      <div class="slabel">Equipment</div>
+      <h2 class="stitle" style="margin-bottom:3.5rem;">My <em>Gear</em></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6 rv">
+        <div class="gc">
+          <div class="gci"><i class="fas fa-camera"></i></div>
+          <div class="gcc">Camera Body</div>
+          <div class="gcn">Canon RP</div>
+          <div class="gcd">Full-frame mirrorless with exceptional dynamic range and low-light performance.</div>
+          <div class="gcs"><span class="st">26MP</span><span class="st">4K 25fps</span><span class="st">ISO 102400</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 rv">
+        <div class="gc">
+          <div class="gci"><i class="fas fa-circle"></i></div>
+          <div class="gcc">Prime Lens</div>
+          <div class="gcn">50mm f/1.8 STM</div>
+          <div class="gcd">The ultimate portrait lens — buttery bokeh and razor-sharp rendering.</div>
+          <div class="gcs"><span class="st">f/1.8</span><span class="st">50mm</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 rv">
+        <div class="gc">
+          <div class="gci"><i class="fas fa-bolt"></i></div>
+          <div class="gcc">Lighting</div>
+          <div class="gcn">Godox V1</div>
+          <div class="gcd">Portable 76Ws strobe for outdoor shoots with HSS and TTL support.</div>
+          <div class="gcs"><span class="st">76Ws</span><span class="st">HSS</span><span class="st">TTL</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="rv">
+      <div class="slabel">Get In Touch</div>
+      <h2 class="stitle" style="margin-bottom:4.5rem;">Let's Create <em>Together</em></h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-5 c-info rv">
+        <p class="c-bio">Available for any kind of shoot — portrait, event, commercial El-Mansurah, or anything in between. Let's talk.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/aboyounis_ph/" class="soc" target="_blank"><i class="fab fa-instagram"></i><span>@aboyounis_ph</span></a>
+          <a href="https://wa.me/201062539287" class="soc" target="_blank"><i class="fab fa-whatsapp"></i><span>+201062539287</span></a>
+          <a href="https://web.facebook.com/profile.php?id=61555190367829" class="soc" target="_blank"><i class="fab fa-facebook-f"></i><span>Ahmed aboyounis ph</span></a>
+        </div>
+      </div>
+      <div class="col-lg-7 rv">
+        <div class="cf" style="padding-left:3rem;">
+          <div class="row">
+            <div class="col-md-6"><label class="flabel">Name</label><input type="text" placeholder="Your full name"/></div>
+            <div class="col-md-6"><label class="flabel">Email</label><input type="email" placeholder="your@email.com"/></div>
+          </div>
+          <label class="flabel">Message</label>
+          <textarea placeholder="Tell me about your project..."></textarea>
+          <button class="btn-g" id="sendbtn" onclick="send()" style="cursor:none;">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="flogo">Ahmed aboyounis</span>
+  <span>© 2025 — All rights reserved to Ahmed Abo Younis</span>
+  <span>El-Mansurah</span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
